@@ -187,7 +187,8 @@ const CONTENT = {
             { en: "Freezing: liquid → solid (energy released).", ar: "التجمد: سائل ← صلب (تنطلق طاقة)." },
             { en: "Vaporization: liquid → gas (energy absorbed), by evaporation or boiling.", ar: "التحول إلى غاز: سائل ← غاز (تُمتص طاقة)، بالتبخر أو الغليان." },
             { en: "Condensation: gas → liquid (energy released).", ar: "التكاثف: غاز ← سائل (تنطلق طاقة)." },
-            { en: "Sublimation: solid → gas directly, e.g. dry ice.", ar: "التسامي: صلب ← غاز مباشرة، مثل الثلج الجاف." }
+            { en: "Sublimation: solid → gas directly, e.g. dry ice.", ar: "التسامي: صلب ← غاز مباشرة، مثل الثلج الجاف." },
+            { en: "Deposition: gas → solid directly (energy released), e.g. frost forming.", ar: "الترسّب: غاز ← صلب مباشرة (تنطلق طاقة)، مثل تكوّن الصقيع." }
           ]
         },
         { type: "note",
@@ -227,7 +228,7 @@ const CONTENT = {
       ],
       quiz: [
         {
-          q: { en: "What is the change of state from a gas directly to a solid called? (And from solid directly to gas?)", ar: "ما اسم تحوّل المادة من صلب مباشرة إلى غاز؟" },
+          q: { en: "What is the change of state from a solid directly to a gas called?", ar: "ما اسم تحوّل المادة من صلب مباشرة إلى غاز؟" },
           options: [ { en: "Sublimation", ar: "التسامي" }, { en: "Condensation", ar: "التكاثف" }, { en: "Melting", ar: "الانصهار" }, { en: "Freezing", ar: "التجمد" } ],
           correct: 0,
           explain: { en: "Sublimation is solid → gas without passing through the liquid state. Dry ice is a classic example.", ar: "التسامي هو تحوّل الصلب ← غاز دون المرور بالحالة السائلة. الثلج الجاف مثال مشهور." }
