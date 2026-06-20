@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bilingual (English / Arabic) interactive revision site for the Grade 9 Science Term 3 End-of-Term exam: notes, diagrams, lesson quizzes and a full mock exam.">
+  <meta name="theme-color" content="#0A5C63">
+  <title>Grade 9 Science — Term 3 EOT Revision</title>
+
+  <!-- Fonts: Space Grotesk (headings), Inter (Latin body), Tajawal (Arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="lang-both">
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="brand" data-go="#home" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <b>G9 Science · Term 3</b>
+          <span>End-of-Term Revision · مراجعة نهاية الفصل</span>
+        </span>
+      </button>
+
+      <span class="topbar-spacer"></span>
+
+      <div class="langtoggle" id="langtoggle" role="group" aria-label="Language / اللغة">
+        <button type="button" data-lang-set="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang-set="ar" aria-pressed="false">ع</button>
+        <button type="button" data-lang-set="both" aria-pressed="true">Both</button>
+      </div>
+    </div>
+
+    <div class="topprogress">
+      <span class="lbl"><span aria-hidden="true">Lessons </span><span id="tp-label">0 / 6</span></span>
+      <div class="bar" role="progressbar" aria-label="Lessons completed" aria-valuemin="0" aria-valuemax="6"><i id="tp-fill"></i></div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"><!-- views render here --></main>
+
+  <footer class="site-foot">
+    <p>Grade 9 Science · Inspire · Term 3 End-of-Term revision. Built for study practice — MCQ format, 25 questions, 100 marks.</p>
+    <p>Your progress is saved only in this browser.
+      <button class="reset" id="resetBtn" type="button">Reset progress · مسح التقدّم</button>
+    </p>
+  </footer>
+
+  <!-- data + logic (plain scripts, run in order) -->
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/diagrams.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
