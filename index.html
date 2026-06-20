@@ -13,6 +13,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+  /* Button icon sizing fix (keeps quiz / next-lesson buttons normal height) */
+  .btn svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .btn-lg svg { width: 20px; height: 20px; }
+  /* School / creator credit */
+  .site-credit { margin-top: 14px; line-height: 1.7; }
+  .site-credit .school { font-weight: 700; color: var(--teal-d); }
+  .site-credit .author { opacity: .85; }
+</style>
 </head>
 <body class="lang-both">
   <a class="skip-link" href="#app">Skip to content</a>
@@ -45,6 +55,11 @@
   <main id="app" tabindex="-1"><!-- views render here --></main>
 
   <footer class="site-foot">
+<p class="site-credit">
+<span class="school">Neima C3 Boys School · مدرسة نعمة ح3 ذكور</span><br>
+<span class="author">By Mr. Mohamed Galal Elashry · إعداد أستاذ محمد جلال العشري</span>
+</p>
+
     <p>Grade 9 Science · Inspire · Term 3 End-of-Term revision. Built for study practice — MCQ format, 25 questions, 100 marks.</p>
     <p>Your progress is saved only in this browser.
       <button class="reset" id="resetBtn" type="button">Reset progress · مسح التقدّم</button>
